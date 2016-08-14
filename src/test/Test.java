@@ -5,10 +5,26 @@
  */
 package test;
 
+import java.sql.Connection;
+import util.Conexion;
+
 /**
  *
  * @author JOSS
  */
 public class Test {
     
+ public static void main(String[] args) {
+        // TODO code application logic here
+       conex();
+    }
+    public static void conex(){
+        Connection cx = Conexion.getConexion();
+        if(cx != null){
+            System.out.println("si");
+        }else{
+            System.out.println("no");
+        }
+        
+    }
 }
