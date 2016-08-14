@@ -9,12 +9,12 @@ package vista;
  *
  * @author JOSS
  */
-public class registroForm extends javax.swing.JInternalFrame {
+public class listadoAlumnoForm extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form registroForm
+     * Creates new form listadoAlumnoForm
      */
-    public registroForm() {
+    public listadoAlumnoForm() {
         initComponents();
     }
 
