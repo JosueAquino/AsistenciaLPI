@@ -9,14 +9,13 @@ package vista;
  *
  * @author JOSS
  */
-public class PrincipalForm extends javax.swing.JFrame {
+public class listadoprofesores extends javax.swing.JFrame {
 
     /**
-     * Creates new form RegistroPrincipal
+     * Creates new form listadoprofesores
      */
-    public PrincipalForm() {
+    public listadoprofesores() {
         initComponents();
-        
     }
 
     /**
@@ -28,51 +27,21 @@ public class PrincipalForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnRegistrarAsistencia = new javax.swing.JToggleButton();
-        jToggleButton2 = new javax.swing.JToggleButton();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("escritorio");
-
-        btnRegistrarAsistencia.setText("REGISTRAR ASISTENCIA");
-        btnRegistrarAsistencia.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegistrarAsistenciaActionPerformed(evt);
-            }
-        });
-
-        jToggleButton2.setText("REGISTRAR NOTAS");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(45, Short.MAX_VALUE)
-                .addComponent(jToggleButton2)
-                .addGap(34, 34, 34)
-                .addComponent(btnRegistrarAsistencia)
-                .addGap(41, 41, 41))
+            .addGap(0, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(137, 137, 137)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnRegistrarAsistencia)
-                    .addComponent(jToggleButton2))
-                .addContainerGap(140, Short.MAX_VALUE))
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnRegistrarAsistenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarAsistenciaActionPerformed
-        // TODO add your handling code here:
-       registroForm registro=new registroForm();
-       registro.setVisible(true);
-        
-    }//GEN-LAST:event_btnRegistrarAsistenciaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -91,27 +60,24 @@ public class PrincipalForm extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PrincipalForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(listadoprofesores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PrincipalForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(listadoprofesores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PrincipalForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(listadoprofesores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PrincipalForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(listadoprofesores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PrincipalForm().setVisible(true);
+                new listadoprofesores().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton btnRegistrarAsistencia;
-    private javax.swing.JToggleButton jToggleButton2;
     // End of variables declaration//GEN-END:variables
 }
