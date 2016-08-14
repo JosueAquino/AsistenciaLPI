@@ -10,5 +10,22 @@ package dto;
  * @author JOSS
  */
 public class cursosDTO {
+    private String curso;
+
+    public cursosDTO() {
+    }
+
+    public cursosDTO(String curso) {
+        this.curso = curso;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+    
     
 }
