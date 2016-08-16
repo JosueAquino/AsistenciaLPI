@@ -44,6 +44,7 @@ public class PrincipalForm extends javax.swing.JFrame {
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
+        alumnos = new javax.swing.JMenuItem();
         jMenu9 = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenu12 = new javax.swing.JMenu();
@@ -95,15 +96,23 @@ public class PrincipalForm extends javax.swing.JFrame {
 
         jMenuBar2.add(jMenu7);
 
-        jMenu6.setText("Registrar Profesores");
+        jMenu6.setText("Registrar ");
 
-        jMenuItem5.setText("jMenuItem5");
+        jMenuItem5.setText("R. Profesores");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem5ActionPerformed(evt);
             }
         });
         jMenu6.add(jMenuItem5);
+
+        alumnos.setText("Registrar Alumnos");
+        alumnos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alumnosActionPerformed(evt);
+            }
+        });
+        jMenu6.add(alumnos);
 
         jMenuBar2.add(jMenu6);
 
@@ -174,6 +183,13 @@ public class PrincipalForm extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
+    private void alumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alumnosActionPerformed
+        // TODO add your handling code here:
+        RegistrarAlumno RA = new RegistrarAlumno();
+        escritorio.add(RA);
+        RA.setVisible(true);
+    }//GEN-LAST:event_alumnosActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -211,6 +227,7 @@ public class PrincipalForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem alumnos;
     private javax.swing.JDesktopPane escritorio;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
